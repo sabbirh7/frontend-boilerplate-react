@@ -4,7 +4,8 @@ import ErrorLayout from '../layouts/ErrorLayout';
 import PublicLayout from '../layouts/PublicLayout';
 import About from '../pages/About/About';
 import Contact from '../pages/Contact/Contact';
-import Home from '../pages/Home/Home';
+import Home from "../pages/Home/Home";
+// import Home from '../pages/Home/Home';
 
 const Routes = createBrowserRouter([
     {

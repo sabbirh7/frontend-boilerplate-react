@@ -1,7 +1,10 @@
-import React from 'react';
 import { Box, Container, Paper, Typography } from '@mui/material';
 
 const About = () => {
+
+
+
+
   return (
     <Container>
         <Paper sx={{ height: "300px", width: "100%", marginTop: "50px", display: "flex", alignItems: "center", justifyContent: "center", border: "3px solid #1976d2" }} elevation="8">
