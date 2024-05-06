@@ -1,22 +1,6 @@
 import { Box, Container, Paper, Typography } from "@mui/material";
-import { useEffect } from "react";
-import { useDispatch, useSelector } from "react-redux";
-import { useGetJsonPlaceHolderPostQuery } from "../../features/testing/testApi";
-import { getPosts, setPosts } from "../../features/testing/testSlice";
 
 const Home = () => {
-    const { data, isLoading } = useGetJsonPlaceHolderPostQuery();
-    const posts = useSelector(getPosts);
-    console.log("🚀 ~ Home ~ posts:", posts);
-    const dispatch = useDispatch();
-    console.log(import.meta.env.BASE_URL, "import.meta.env.BASE_URL");
-
-    useEffect(() => {
-        if (!isLoading && data) {
-            dispatch(setPosts(data));
-        }
-    }, [data]);
-
     return (
         <Container>
             <Paper
