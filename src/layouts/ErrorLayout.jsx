@@ -1,16 +1,14 @@
 import { Box } from "@mui/material";
 import { Helmet, HelmetProvider } from "react-helmet-async";
 
-const ErrorLayout = ({component, pageTitle}) => {
+const ErrorLayout = ({ component, pageTitle }) => {
     return (
         <HelmetProvider>
-            {
-                pageTitle && (
+            {pageTitle && (
                 <Helmet defer={false}>
                     <title>My App || {pageTitle}</title>
                 </Helmet>
-                )
-            }
+            )}
             <Box
                 sx={{
                     display: "flex",
@@ -25,6 +23,6 @@ const ErrorLayout = ({component, pageTitle}) => {
             </Box>
         </HelmetProvider>
     );
-}
+};
 
 export default ErrorLayout;

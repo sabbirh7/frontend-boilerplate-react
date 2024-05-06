@@ -8,26 +8,22 @@ const Employee = () => {
         {
             field: "code",
             headerName: "Code",
-            width: 200,
-            editable: true
+            width: 200
         },
         {
             field: "department",
             headerName: "Department",
-            width: 200,
-            editable: true
+            width: 200
         },
         {
             field: "position",
             headerName: "Position",
-            width: 350,
-            editable: true
+            width: 350
         },
         {
             field: "joiningDate",
             headerName: "Joining Date",
-            width: 160,
-            editable: true
+            width: 160
         }
     ];
 
@@ -55,7 +51,6 @@ const Employee = () => {
                 disableRowSelectionOnClick
                 disableColumnFilter
                 disableColumnSelector
-                disable
                 disableDensitySelector
                 slots={{ toolbar: GridToolbar }}
                 slotProps={{

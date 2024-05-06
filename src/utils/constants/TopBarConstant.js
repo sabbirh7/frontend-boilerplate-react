@@ -8,17 +8,7 @@ export const PAGES = [
         id: 2,
         title: "Employees",
         link: "/employees"
-    },
-    {
-        id: 3,
-        title: "About",
-        link: "/about"
-    },
-    {
-        id: 4,
-        title: "Contact",
-        link: "/contact"
-    },
+    }
 
 ];
 
